@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+h1, p, button,h3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold; 
+    color: white;
+}
+
+.container{
+    display: flex;
+    height: 95vh;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    background-image: url(/img/back.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+}
+.picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45vh;
+   
+    
+
+}
+.picture img{
+    width: 300px;
+    height: auto;
+    max-width: 500px;
+    margin-bottom: 0px;
+}
+
+#photo{
+    transform: translateX(0px);
+    animation: float 6s ease-out infinite;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+.dataPokemon{
+    width: 100%;
+    height: 40vh;
+}
+.green{
+    color: #6dce21;
+    font-weight: bold;
+}
+.attack{
+    color: #f40000;
+    font-weight: bold;
+}
+.defense{
+    color: rgb(74, 74, 255);
+    font-weight: bold;
+}
+.esp-attack{
+    color: #e5ea0f;
+    font-weight: bold;
+}
+.minimal{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.nameP {
+    font-size: 50px;
+}
+/*borrar*/
+.c-n{
+    display: block;
+    text-align: left;
+    padding: 1vh 0;
+    margin: 5px;
+
+
+}
+.numP{
+    font-size:20px;   
+
+}
+#category{
+    font-size: 12px;
+
+}
+
+
+.boxP{
+    gap:5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box{
+    max-width: 100px;
+    min-width: 150px;
+    height: 100px;
+    text-align: center;
+    font-size: 1.3vh;
+
+}
+
+.buttonN{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.buttonN button{
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+button:hover{
+    background-color: grey;
+}
+
+footer div{
+    background-color: black;
+    padding: 10px;
+}
+.footer{
+    text-align: end;
+    font-weight: 300;
+}
+
+
+
+@media (min-width: 900px){
+    .container{
+        display: flex;
+        flex-wrap:nowrap;
+    
+    }
+    .dataPokemon{
+        margin: 10px;
+        width: 50%;
+        height: 40vh;
+        min-width: 500px;
+        
+    }
+    .picture{
+        width: 45%;
+        height: 90vh;
+        min-width: 500px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+    .nameP{
+        padding: 0;
+        display: flex;
+        align-items: end;
+    }
+    .minimal{
+        margin: 0;
+
+    }
+
+    
+    .boxP{
+        gap:.5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .box{
+        min-width: 100px;
+        height: 100px;
+        text-align: center;
+        font-size: 1vh;
+    
+    }
+    .nameP{
+        font-size: 100px;
+    }
+    .c-n{
+        text-align: left;
+        padding-top: 30px ; 
+    }
+    .c-n p{
+        font-size: 40px
+    }
+
+
+
+
+
+
+
+
+
+
+}
